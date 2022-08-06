@@ -34,13 +34,23 @@
     <swiper-slide style="overflow:hidden;"><project></project></swiper-slide>
     <swiper-slide style="overflow:hidden;"><contact></contact></swiper-slide>
     <!-- <swiper-slide><test></test></swiper-slide> -->
-    
   </swiper>
   <!-- <scrolltop></scrolltop> -->
   
   <div class="bottom_page">
     <div><span id="bottomtext" ref="current_p">{{text1}}</span> / <span v-bind:class="bottomtext">6</span></div>
   </div>
+
+<transition name="fade">
+    <div id="pagetop" class="fixed right-0 bottom-0" v-show="scY > 1" @click="toTop">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+           stroke="#4a5568"
+           stroke-width="1" stroke-linecap="square" stroke-linejoin="arcs">
+        <path d="M18 15l-6-6-6 6"/>
+      </svg>
+    </div>
+  </transition>
+
 </template>
 
 <script>
@@ -78,6 +88,8 @@ export default {
       bottomtext : 'bottomtext',
       sidetext:'sidetext',
       visible: false,
+      scTimer: 0,
+        scY: 0,
     };
   },
   mounted() {
@@ -94,6 +106,22 @@ export default {
       return this.mySwiper;
     },
   },
+  methods: {
+      handleScroll: function () {
+        if (this.scTimer) return;
+        this.scTimer = setTimeout(() => {
+          this.scY = window.scrollY;
+          clearTimeout(this.scTimer);
+          this.scTimer = 0;
+        }, 100);
+      },
+      toTop: function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      },
+    },
 
   components: {
     mainheader,
@@ -109,6 +137,7 @@ export default {
     contact
     // scrolltop
   },
+  
   // render : h=>h(test),
   setup() {
     const sidemenus = [
@@ -125,7 +154,7 @@ export default {
     const text1 = ref("1");
     const mySwiper = ref("");
 
-     const bullet = ['1번', '2번', '3번'];
+    const bullet = ['1번', '2번', '3번'];
     const c_bullet= (index,className) => {
        return '<div class="' + className + '"><span>' + (bullet[index]) + '</span></div>';
     }

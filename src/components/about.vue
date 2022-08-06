@@ -45,7 +45,7 @@
         <div>
           <div class="about_icon aicon2"></div>
           <div class="about_txt">
-            <a href="">Github</a>
+            <a href="https://github.com/KimYuRa2">Github</a>
           </div> 
         </div>
         <div>

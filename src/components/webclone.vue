@@ -40,7 +40,7 @@
           <div class="webclone_sec webimg1" @mouseover="webhover1=true" @mouseleave="webhover1=false">
             <!-- <router-link to="/detail1"></router-link>
             <router-view/> -->
-            <a href="http://ura3118.dothome.co.kr/sing.html"></a>
+            <a href="http://ura3118.dothome.co.kr/sing.html" target="_blank"></a>
           </div>
           <div class="webclone_name">
             <div v-if="webhover1" class="webhover_img">
@@ -59,7 +59,7 @@
         </swiper-slide>
         <swiper-slide>
           <div class="webclone_sec webimg2" @mouseover="webhover2=true" @mouseleave="webhover2=false">
-            <a href="http://ura3118.dothome.co.kr/dae.html"></a>
+            <a href="http://ura3118.dothome.co.kr/dae.html" target="_blank"></a>
           </div>
           <div class="webclone_name">
             <div v-if="webhover2" class="webhover_img">
@@ -78,7 +78,7 @@
         </swiper-slide>
         <swiper-slide>
           <div class="webclone_sec webimg3" @mouseover="webhover3=true" @mouseleave="webhover3=false">
-            <a href="http://ura3118.dothome.co.kr/pollex.html"></a>
+            <a href="http://ura3118.dothome.co.kr/pollex.html" target="_blank"></a>
           </div>
           <div class="webclone_name">
             <div v-if="webhover3" class="webhover_img">

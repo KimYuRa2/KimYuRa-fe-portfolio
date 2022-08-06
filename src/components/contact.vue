@@ -36,7 +36,7 @@
           <div>
             <div class="footer_icon ficon3"></div>
             <div class="footer_txt">
-              <a href="">Github</a>
+              <a href="https://github.com/KimYuRa2">Github</a>
             </div> 
           </div>
 
@@ -117,11 +117,15 @@ export default {
   }
   .footer_txt{
     color:#fff;
-    font-size:16px;
+    font-size:20px;
+    -webkit-text-stroke-color: #222;
+    -webkit-text-stroke-width: thin;
   }
     .footer_txt>a{
     color:#fff;
-    font-size:16px;
+    font-size:20px;
+      -webkit-text-stroke-color: #222;
+    -webkit-text-stroke-width: thin;
   }
   .footer_bottom{
     white-space: nowrap;

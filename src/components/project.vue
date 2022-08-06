@@ -15,7 +15,7 @@
       >
         <swiper-slide>
           <div class="project_sec projectimg1" @mouseover="projecthover1=true" @mouseleave="projecthover1=false">
-            <a href="https://seomun-app01.herokuapp.com/"></a>
+            <a href="https://seomun-app01.herokuapp.com/" target="_blank"></a>
           </div>
           <div class="project_name">
             <div v-if="projecthover1" class="projecthover_img">
@@ -38,12 +38,12 @@
                   PC & MOBILE WEBSITE RENEWAL<br>
                   ( DESIGN / DEVELOP )
                 </p>
-                
           </div>
         </swiper-slide>
+
         <swiper-slide>
           <div class="project_sec projectimg2" @mouseover="projecthover2=true" @mouseleave="projecthover2=false">
-            <a href="https://heynature-app01.herokuapp.com/"></a>
+            <a href="https://heynature-app01.herokuapp.com/" target="_blank"></a>
           </div>
           <div class="project_name">
             <div v-if="projecthover2" class="projecthover_img">
@@ -66,6 +66,36 @@
                   PC & MOBILE WEBSITE RENEWAL<br>
                   ( DESIGN / DEVELOP )
                 </p>
+          </div>
+        </swiper-slide>
+
+        <swiper-slide>
+          <div class="project_sec projectimg3" @mouseover="projecthover3=true" @mouseleave="projecthover3=false">
+            <a href="" target="_blank"></a>
+          </div>
+          <div class="project_name">
+            <div v-if="projecthover3" class="projecthover_img">
+              <img src="../assets/images/html.png">
+              <img src="../assets/images/css.png">
+              <img src="../assets/images/javascript.png">
+              <img src="../assets/images/about6.png">
+              <img src="../assets/images/about4.png">
+              <img src="../assets/images/node.png">
+              <img src="../assets/images/about7.png">
+              <img src="../assets/images/heroku.png">
+              <img src="../assets/images/about8.png">
+            </div>
+                <p class="projectname_txt1">포트폴리오</p>
+                <div class="projecthover_txt" v-if="projecthover3">
+                  HTML / CSS / JS / jQuery / Vue.js<br>
+                  node.js / mysql / heroku / github <br>
+                  포트폴리오 페이지 제작
+                </div>
+                <p class="projectname_txt2">
+                  PORTFOLIO SITE CREATION<br>
+                  ( DESIGN / DEVELOP )
+                </p>
+                
           </div>
         </swiper-slide>
       </swiper>
@@ -220,6 +250,14 @@ a{
   background-image:url('../assets/images/2f595f805e6a41ef830641f046c4658c_20190715121608.jpg');
   background-position: 35% center;
   background-size: auto 100%;
+  background-repeat: no-repeat;
+  position:relative;
+}
+.projectimg3>a{
+  display:block;
+  background-image:url('../assets/images/pngwing.com.png');
+  background-position: -90% center;
+  background-size: auto 80%;
   background-repeat: no-repeat;
   position:relative;
 }
