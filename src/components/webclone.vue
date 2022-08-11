@@ -174,7 +174,7 @@ body {
   /* cursor:url("../assets/images/scrollmouse1.png"), auto; */
 }
 a{
-  cursor: url("../assets/images/scrollmouse1.png") 20 30, pointer !important;
+  cursor: url("../assets/images/80-80.png") 20 30, pointer !important;
 }
 .swiper {
   width: 100%;
