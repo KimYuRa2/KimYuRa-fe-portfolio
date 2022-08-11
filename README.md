@@ -1,5 +1,7 @@
 # vuetest0722
 
+# firebase hosting url - https://kimyura-fe-portfolio.web.app
+
 ## Project setup
 ```
 npm install
